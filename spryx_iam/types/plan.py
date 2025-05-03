@@ -21,3 +21,7 @@ class PlanFeatures(BaseModel):
     max_agents: Optional[int]
     max_channels: Optional[int]
     max_storage_bytes: Optional[int]
+
+
+class Plan(BaseModel):
+    pass

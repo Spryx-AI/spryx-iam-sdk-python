@@ -1,3 +1,4 @@
+from spryx_core import Page
 from spryx_http.base import SpryxAsyncClient
 
 from spryx_iam.types.organization import Organization
@@ -14,5 +15,8 @@ class Organizations:
             )
 
         return await self._client.get(
-            url=f"/organizations/{organization_id}", cast_to=Organization
+            path=f"/iam/v1/organizations/{organization_id}", cast_to=Organization
         )
+
+    async def list(self) -> Page[Organization]:
+        return await self._client.get(path="/iam/v1/organizations")

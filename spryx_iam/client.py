@@ -1,6 +1,7 @@
 from spryx_http import SpryxAsyncClient
 
 from spryx_iam.resources.organizations import Organizations
+from spryx_iam.resources.plans import Plans
 
 
 class SpryxIAM(SpryxAsyncClient):
@@ -17,3 +18,4 @@ class SpryxIAM(SpryxAsyncClient):
         )
 
         self.organizations = Organizations(self)
+        self.plans = Plans(self)
