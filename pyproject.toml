@@ -1,6 +1,6 @@
 [project]
 name = "spryx-iam"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = [
     {name = "Pedro Cantidio",email = "ppcantidio@gmail.com"}
