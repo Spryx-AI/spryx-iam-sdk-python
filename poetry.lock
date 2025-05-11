@@ -802,14 +802,14 @@ python-ulid = ">=3.0.0,<4.0.0"
 
 [[package]]
 name = "spryx-http"
-version = "0.1.4"
+version = "0.1.5"
 description = "A Python HTTP client library for Spryx services"
 optional = false
 python-versions = ">=3.11"
 groups = ["main"]
 files = [
-    {file = "spryx_http-0.1.4-py3-none-any.whl", hash = "sha256:b4433369ea1cbcd907ca4b7a3f49816ddcc4a1e8172e1aae84778a92cd466768"},
-    {file = "spryx_http-0.1.4.tar.gz", hash = "sha256:3edee419edb33c787c885c14205e6888fa4a896fee55448825c4d6b55fe540a8"},
+    {file = "spryx_http-0.1.5-py3-none-any.whl", hash = "sha256:3d44a4972a05e0d28257faff56aa1ed387353e72f5240be3829ad0ccd503176a"},
+    {file = "spryx_http-0.1.5.tar.gz", hash = "sha256:c01b592c4b6bb8a06673d15d0fa1be38315e3c01cf54ed1ac3991f01819e9f07"},
 ]
 
 [package.dependencies]
@@ -817,7 +817,7 @@ httpx = ">=0.28.1,<0.29.0"
 logfire = ">=3.14.0,<4.0.0"
 pydantic = ">=2.11.3,<3.0.0"
 pydantic-settings = ">=2.9.1,<3.0.0"
-spryx-core = "0.1.11"
+spryx-core = ">=0.1.11,<0.2.0"
 
 [[package]]
 name = "typing-extensions"
@@ -976,4 +976,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.11"
-content-hash = "fa43d46e31744466a17a5e7d87010c0fdde3833d5e0cb0abf9f638d7bfbc64d6"
+content-hash = "8a4e49cd14ba14ac7a176ca9ddf6f38859aa527559015c1c09962e403d0bad74"
