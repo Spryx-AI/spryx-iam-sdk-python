@@ -9,10 +9,11 @@ class SpryxIAM(SpryxAsyncClient):
         self,
         application_id: str,
         application_secret: str,
-        base_url: str = "https://api.spryx.ai",
+        base_url: str = "https://iam.spryx.ai",
     ):
         super().__init__(
             base_url=base_url,
+            iam_base_url=base_url,
             application_id=application_id,
             application_secret=application_secret,
         )

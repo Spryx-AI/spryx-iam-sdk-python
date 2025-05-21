@@ -15,8 +15,8 @@ class Organizations:
             )
 
         return await self._client.get(
-            path=f"/iam/v1/organizations/{organization_id}", cast_to=Organization
+            path=f"/v1/organizations/{organization_id}", cast_to=Organization
         )
 
     async def list(self) -> Page[Organization]:
-        return await self._client.get(path="/iam/v1/organizations")
+        return await self._client.get(path="/v1/organizations")
