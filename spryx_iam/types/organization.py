@@ -2,7 +2,7 @@ from datetime import datetime
 from enum import StrEnum
 from typing import List, Optional
 
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 from spryx_iam.types.plan import Periodicity, PlanFeatures
 
@@ -37,7 +37,7 @@ class Member(BaseModel):
 
 
 class Organization(BaseModel):
-    id: str
+    id: str = Field(alias="_id")
     name: str
     subscription: OrganizationSubscription
     members: List[Member]
